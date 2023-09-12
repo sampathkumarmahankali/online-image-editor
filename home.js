@@ -4,6 +4,7 @@ function sam(){
     let navMenu = document.querySelector('.onds');
     navMenu.classList.toggle("visible");
 }
+
 const fileinput=document.querySelector(".file-input");
 const choose=document.querySelector(".choosefile");
 const preview_img=document.querySelector(".imge");
@@ -12,6 +13,7 @@ const filteropt=document.querySelectorAll(".filters button");
 const filter_name=document.querySelector(".filterinfo .filtername");
 const filtslider=document.querySelector(".slider input");
 const filtvalue=document.querySelector(".filterinfo .value");
+
 let brightness=100;
 let saturation=100;
 let grayscale=0;
