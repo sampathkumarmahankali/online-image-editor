@@ -15,6 +15,7 @@ const filtslider=document.querySelector(".slider input");
 const filtvalue=document.querySelector(".filterinfo .value");
 const rotateopts=document.querySelectorAll(".rotate button");
 const resetbtn=document.querySelector(".controls .resetbutton");
+const savbtn=document.querySelector(".row .save");
 
 let brightness=100;
 let saturation=100;
@@ -110,6 +111,24 @@ rotateopts.forEach(options=>{
     })
 })
 
-console.log(resetbtn);
+const saveimg=()=>{
+    const canvas=document.createElement("canvas");
+    const ctx=canvas.getContext("2d");
+    canvas.width=preview_img.naturalWidth;
+    canvas.height=preview_img.naturalHeight;
+    ctx.filter=`brightness(${brightness}%) saturate(${saturation}%) grayscale(${grayscale}%) invert(${inversion}%)`;
+    ctx.translate(canvas.width/2,canvas.height/2);
+    if(rotate!=0){
+        ctx.rotate(rotate * Math.PI/180);
+    }
+    ctx.scale(fliphorizontal,flipvertical)
+    ctx.drawImage(preview_img,-canvas.width/2,-canvas.height/2,canvas.width,canvas.height);
+    const link=document.createElement("a");
+    link.download="Img.png";
+    link.href=canvas.toDataURL();
+    link.click();
+}
+
 filtslider.addEventListener("input",updatefilter);
 resetbtn.addEventListener("click",resetfilt);
+savbtn.addEventListener("click",saveimg);

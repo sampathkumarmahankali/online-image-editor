@@ -154,6 +154,13 @@
     background-color: rgb(255, 255, 255);
   }
  
+ .previewimg .imge{
+    max-width: 490px;
+    max-height: 330px;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+ }
   @media (max-width: 712px){
     .container{
        flex-wrap: wrap-reverse;
