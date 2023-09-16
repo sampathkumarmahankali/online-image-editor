@@ -13,17 +13,27 @@ const filteropt=document.querySelectorAll(".filters button");
 const filter_name=document.querySelector(".filterinfo .filtername");
 const filtslider=document.querySelector(".slider input");
 const filtvalue=document.querySelector(".filterinfo .value");
+const rotateopts=document.querySelectorAll(".rotate button");
+const resetbtn=document.querySelector(".controls .resetbutton");
 
 let brightness=100;
 let saturation=100;
 let grayscale=0;
 let inversion=0;
+let rotate=0;
+let flipvertical=1;
+let fliphorizontal=1;
 
 const loadimage = ()=>{
     let file=fileinput.files[0];
     if(!file) return;
     preview_img.src=URL.createObjectURL(file);
     dis.classList.remove("disable");
+}
+
+const applyfilters = ()=>{
+    preview_img.style.filter=`brightness(${brightness}%) saturate(${saturation}%) grayscale(${grayscale}%) invert(${inversion}%)`;
+    preview_img.style.transform=`rotate(${rotate}deg) scale(${fliphorizontal},${flipvertical})`;
 }
 
 fileinput.addEventListener("change",loadimage);
@@ -69,4 +79,37 @@ const updatefilter = ()=>{
    applyfilters();
 }
 
+const resetfilt =()=>{
+         brightness=100;
+        saturation=100;
+         grayscale=0;
+         inversion=0;
+         rotate=0;
+         flipvertical=1;
+         fliphorizontal=1;
+         filteropt[0].click();
+         applyfilters();
+}
+rotateopts.forEach(options=>{
+    options.addEventListener("click",()=>{
+        if(options.id==="left"){
+           rotate-=90;
+          
+        }else if(options.id==="right"){
+            rotate+=90;
+           
+         }else if(options.id=="horizontal"){
+           fliphorizontal= fliphorizontal==1?-1:1;
+
+         }else if(options.id=="vertical"){
+            flipvertical=flipvertical==1?-1:1;
+
+         }
+        
+        applyfilters();
+    })
+})
+
+console.log(resetbtn);
 filtslider.addEventListener("input",updatefilter);
+resetbtn.addEventListener("click",resetfilt);
