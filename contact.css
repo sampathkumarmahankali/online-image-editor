@@ -110,3 +110,20 @@
    img{
     border-radius: 50%;
    }
+   @media (max-width: 712px){
+    .container{
+        height: 500px;
+        width: 0;
+    }
+    .accounts{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        height: 400px;
+        width: 200px;
+    }
+    .accounts a{
+        padding: 10px;
+    }
+   }
