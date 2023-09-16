@@ -161,6 +161,15 @@
     width: 100%;
     object-fit: contain;
  }
+ .choosefile:hover{
+  background-color: rgb(51, 207, 234);
+ }
+ .save:hover{
+  background-color: rgb(21, 192, 47);
+ }
+ .resetbutton:hover{
+  background-color: rgb(192, 101, 21);
+ }
   @media (max-width: 712px){
     .container{
        flex-wrap: wrap-reverse;
