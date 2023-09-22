@@ -14,6 +14,9 @@ let contrast=100;
 let sepia=0;
 option.forEach(opt=>{
     opt.addEventListener("click",()=>{
+        // document.querySelector(".option .active").classList.remove("active");
+      
+        // opt.classList.add("active");
      if(opt.id=="b1"){
             grayscale=100;
             preview_img.style.filter=`grayscale(100%)`
@@ -44,6 +47,7 @@ option.forEach(opt=>{
                  blured=0;
                  contrast=100;
                  sepia=0;
+
         }
     })
 })
