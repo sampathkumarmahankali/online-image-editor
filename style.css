@@ -166,3 +166,16 @@ font-family: 'Roboto', sans-serif;
     margin-top: 15px;
     text-align: center;
   }
+  @media (max-width: 383px) {
+         .panel{
+          height: 680px;
+         }
+         footer{
+           padding: 20px;
+           height: 80px;
+         }
+         .footer ul a{
+          font-size: 15px;
+         }
+         
+  }
