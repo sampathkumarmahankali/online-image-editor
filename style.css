@@ -134,7 +134,7 @@ font-family: 'Roboto', sans-serif;
    }
   footer{
      padding: 40px; 
-    height: 100px;
+    height: 40px;
     background-color: black;
    
   }
@@ -149,6 +149,7 @@ font-family: 'Roboto', sans-serif;
     list-style: none;
   }
   .footer ul a{
+    font-size: 20px;
     text-decoration: none;
     color: aliceblue;
     margin: 4px;
@@ -160,4 +161,8 @@ font-family: 'Roboto', sans-serif;
   .hr{
     border: none;
      border-top: 0.2px solid rgb(2, 23, 53);
+  }
+  .copyright{
+    margin-top: 15px;
+    text-align: center;
   }
