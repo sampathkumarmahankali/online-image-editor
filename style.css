@@ -115,7 +115,7 @@ font-family: 'Roboto', sans-serif;
    }
    @media (max-width: 746px){
     .panel{
-        height: 500px;
+        height: 610px;
         display: block;
        }
      
