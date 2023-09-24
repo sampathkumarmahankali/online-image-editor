@@ -166,7 +166,7 @@ font-family: 'Roboto', sans-serif;
     margin-top: 15px;
     text-align: center;
   }
-  @media (max-width: 383px) {
+  @media (max-width: 450px) {
          .panel{
           height: 680px;
          }
