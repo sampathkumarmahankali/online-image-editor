@@ -38,6 +38,7 @@
     padding: 30px;
    }
    .start{
+    cursor: pointer;
     text-decoration: none;
     border: 1.5px solid black;
     padding: 5px;
@@ -179,3 +180,58 @@ font-family: 'Roboto', sans-serif;
          }
          
   }
+  .form-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  form {
+    width: 400px;
+    background: #fff;
+    padding-right: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+label, input {
+    display: block;
+    margin: 10px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+.disable{
+  display: none;
+}
+.noacc{
+  margin-top: 5px;
+}
+span{
+  color: #0056b3;
+  cursor: pointer;
+}
