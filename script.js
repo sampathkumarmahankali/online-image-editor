@@ -16,3 +16,11 @@ function change(){
      signin.classList.add("disable");
      signup.classList.remove("disable")
 }
+function wrong1(){
+    signin.classList.add("disable");
+    log.classList.remove("disable");
+}
+function wrong2(){
+    signup.classList.add("disable");
+    log.classList.remove("disable");
+}

@@ -187,9 +187,12 @@ font-family: 'Roboto', sans-serif;
   }
   form {
     width: 400px;
-    background: #fff;
+  
+    /* background: #fff; */
+    backdrop-filter: blur(5px);
     padding-right: 30px;
     padding: 20px;
+    padding-top: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -232,6 +235,16 @@ button:hover {
   margin-top: 5px;
 }
 span{
-  color: #0056b3;
+  font-size: larger;
+  color: #040776;
   cursor: pointer;
+}
+.wrong{
+  margin-left: 95%;
+}
+.email{
+  font-size: larger;
+}
+.password{
+  font-size: larger;
 }

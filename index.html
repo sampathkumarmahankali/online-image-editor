@@ -38,6 +38,7 @@
         <div class="getstart"><a onclick="login()" class="start">Login</a></div>
         <div class="form-box">
               <form action="index.html" method="get" class="signup disable">
+                <i class="fa-solid fa-circle-xmark wrong" onclick="wrong2()"></i>
                 <h1>sign up</h1>
                 <form >
                     <div class="nameid">
@@ -56,6 +57,7 @@
                 </form>
               </form>
               <form action="index.html" method="get" class="signin disable">
+                <i class="fa-solid fa-circle-xmark wrong" onclick="wrong1()"></i>
                 <h1>Sign In</h1>
                 <div class="emailid">
                     <label for="email">Email:</label>
@@ -66,7 +68,7 @@
                     <input type="password" class="password" name="password" required>
                 </div>
                 <button type="submit">Sign In</button>
-                <div class="noacc">do not have account <span class="clickhere" onclick="change()">Click here</span></div>
+                <div class="noacc">do not have an account <span class="clickhere" onclick="change()">Click here</span></div>
             </form>
         </div>
     </div></div>
