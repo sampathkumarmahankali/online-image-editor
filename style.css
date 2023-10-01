@@ -193,7 +193,7 @@ font-family: 'Roboto', sans-serif;
     padding-right: 30px;
     padding: 20px;
     padding-top: 10px;
-    border-radius: 5px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
@@ -246,5 +246,5 @@ span{
   font-size: larger;
 }
 .password{
-  font-size: larger;
+  font-size: 15px;
 }
