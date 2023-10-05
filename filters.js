@@ -25,8 +25,8 @@ option.forEach(opt=>{
              contrast=100;
              sepia=0;
         }else if(opt.id=="b2"){
-            blured=1;
-            preview_img.style.filter=`blur(1px)`
+            blured=2;
+            preview_img.style.filter=`blur(2px)`
             grayscale=0;
              contrast=100;
              sepia=0;
