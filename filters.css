@@ -187,4 +187,19 @@
       margin-left: 10px;
     }
  }
- 
+ #startRecognition{
+  cursor: pointer;
+  padding: 4px;
+  font-size: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+ margin-top: 20px;
+ }
+ .speechrecog{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ .actived{
+  background-color: rgb(63, 155, 42);
+ }
