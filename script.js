@@ -7,7 +7,7 @@ const signin=document.querySelector(".signin");
 const signup=document.querySelector(".signup");
 const clickme=document.querySelector(".clickhere");
 const log=document.querySelector(".start");
-
+//this is login function
 function login(){
     signin.classList.remove("disable");
     log.classList.add("disable");
