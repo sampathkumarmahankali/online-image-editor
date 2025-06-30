@@ -17,6 +17,7 @@ function change(){
      signin.classList.add("disable");
      signup.classList.remove("disable")
 }
+//this is wrong function
 function wrong1(){
     signin.classList.add("disable");
     log.classList.remove("disable");
